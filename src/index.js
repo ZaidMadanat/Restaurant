@@ -1,6 +1,7 @@
 import { createHome } from "./home";
 import './style.css';
 import { createMenu } from "./menu";
+import { createAbout } from "./about";
 
 createHome();
 const content = document.getElementById('content');
@@ -16,9 +17,10 @@ navigation.forEach((button) => {
             createMenu();
         }
         
-        //if(button.className ==== 'About') { 
-          //  createAbout();
-        //}
+        if(button.className === 'About') { 
+            clearData();
+            createAbout();
+        }
     })
 }); 
 function clearData() { 
