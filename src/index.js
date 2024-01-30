@@ -1,5 +1,7 @@
 import { createHome } from "./home";
 import './style.css';
+import { createMenu } from "./menu";
+
 createHome();
 const content = document.getElementById('content');
 const navigation = document.querySelectorAll('button');
@@ -8,15 +10,15 @@ navigation.forEach((button) => {
         if(button.className === 'Home') { 
             clearData();
             createHome();
-        }
-        /*  
+        } 
         if(button.className === 'Menu') { 
+            clearData();
             createMenu();
         }
-        if(button.className ==== 'About') { 
-            createAbout();
-        }
-        */
+        
+        //if(button.className ==== 'About') { 
+          //  createAbout();
+        //}
     })
 }); 
 function clearData() { 
