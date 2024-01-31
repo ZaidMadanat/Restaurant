@@ -2,6 +2,14 @@ import { createHome } from "./home";
 import './style.css';
 import { createMenu } from "./menu";
 import { createAbout } from "./about";
+import mapMarker from './assets/map-marker.svg';
+import gitlogo from './assets/github-mark-white.png';
+
+let mapsrc = document.querySelector('.location a img');
+mapsrc.src = mapMarker; 
+
+let gitsrc = document.querySelector('#footer .name .gitlogo'); 
+gitsrc = gitlogo; 
 
 createHome();
 const content = document.getElementById('content');
